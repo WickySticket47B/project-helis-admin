@@ -7,6 +7,7 @@ import { Admin, Resource } from "react-admin";
 import { firebaseConfig } from "$lib/firebase";
 import { theme } from "$lib/theme";
 import galleryItems from "$resources/gallery-items";
+import contacts from "$resources/contacts";
 
 const authProvider = FirebaseAuthProvider(firebaseConfig, {
   logging: false,
@@ -26,6 +27,7 @@ const App: FC = () => {
       dataProvider={dataProvider}
     >
       <Resource {...galleryItems} />
+      <Resource {...contacts} />
     </Admin>
   );
 };

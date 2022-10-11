@@ -1,8 +1,8 @@
+import type { ResourceProps } from "react-admin";
 import { PhotoAlbum as PhotoAlbumIcon } from "@mui/icons-material";
 import GalleryItemList from "./GalleryItemList";
 import GalleryItemCreate from "./GalleryItemCreate";
 import GalleryItemEdit from "./GalleryItemEdit";
-import type { ResourceProps } from "react-admin";
 
 const resource: ResourceProps = {
   name: "gallery-items",
